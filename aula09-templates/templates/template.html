@@ -4,9 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
     <title>Template</title>
 </head>
 <body>
+    {# Coentários jinja2 #}
     <h1>Usando templates no Flask</h1>
+    <p>
+        {# Inserindo valores de variáveis de app.py #}
+        {{ x + y }}
+
+        {%  if x > 50: %}
+        <p>Primeira situação</p>
+        {% else %}
+        <p>Segunda situação</p>
+        {% endif %}
+
+        <table class="w3-table-all w3-hoverable">
+            <tr class="w3-gray">
+                <th>Nome</th>
+                <th>Telefone</th>
+            </tr>
+        
+            {% for nome, telefone in usuarios.items(): %}
+            <tr>
+                <td>{{ nome }}</td>
+                <td>{{ telefone }}</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+    </p>
 </body>
 </html>
