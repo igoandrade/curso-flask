@@ -1,0 +1,14 @@
+tasks:
+  - name: Python Requirements
+    init: pip install -r requirements.txt
+
+  - name: Node Dependencies
+    init: npm install
+
+vscode:
+  extensions:
+    - almenon.arepl
+    - ms-python.python
+
+image:
+  file: .gitpod.dockerfile
