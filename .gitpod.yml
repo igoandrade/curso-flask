@@ -9,6 +9,7 @@ vscode:
   extensions:
     - almenon.arepl
     - ms-python.python
+    - ms-toolsai.jupyter
 
 image:
   file: .gitpod.dockerfile
