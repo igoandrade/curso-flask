@@ -1,6 +1,7 @@
 tasks:
   - name: Pip upgrade
     init: pip3 install --upgrade pip
+    
   - name: Python Requirements
     init: pip3 install -r requirements.txt
 
